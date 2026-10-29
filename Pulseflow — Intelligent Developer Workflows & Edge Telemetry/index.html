@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pulseflow is an intelligent developer workflow and edge telemetry platform. Orchestrate CI/CD pipelines, monitor real-time metrics, and accelerate software delivery.">
+  <meta name="keywords" content="developer tools, CI/CD, DevOps, edge telemetry, cloud automation, responsive landing page">
+  <meta name="author" content="Pulseflow Technologies">
+  <meta name="theme-color" content="#0b0f19">
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pulseflow — Intelligent Workflows for Modern Engineering Teams">
+  <meta property="og:description" content="Automate deployment pipelines and monitor sub-millisecond edge telemetry in one unified developer platform.">
+  <meta property="og:image" content="assets/icons/pulseflow-preview.png">
+
+  <title>Pulseflow — Intelligent Developer Workflows &amp; Edge Telemetry</title>
+
+  <!-- Google Fonts: Inter font family for crisp modern UI typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon SVG Data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%236366f1'/><path d='M9 16l4 4 10-10' stroke='%23ffffff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+
+  <!-- =========================================================================
+       ACCESSIBILITY SKIP LINK
+       Enables keyboard and screen reader users to skip directly to main content.
+       ========================================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION BAR
+       - Fixed/Sticky navigation with backdrop blur
+       - Semantic <header> and <nav>
+       - Accessible mobile hamburger toggle (aria-expanded, aria-controls)
+       - Theme toggle switch (Light / Dark mode)
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Pulseflow Home">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="url(#logo-gradient)"/>
+          <path d="M7 16L12 11L17 21L21 13L25 16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="25" cy="16" r="2" fill="#38BDF8"/>
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4F46E5"/>
+              <stop offset="1" stop-color="#06B6D4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Pulseflow</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list" role="list">
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li class="nav-item"><a href="#stats" class="nav-link">Metrics</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Theme Switcher & Buttons -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch between light and dark theme" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#pricing" class="btn btn-secondary-subtle nav-signin-btn">Sign In</a>
+        <a href="#pricing" class="btn btn-primary nav-cta-btn">Start Free Trial</a>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer / Slide-Down Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="container mobile-drawer-inner">
+        <ul class="mobile-nav-list" role="list">
+          <li><a href="#features" class="mobile-nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+          <li><a href="#stats" class="mobile-nav-link">Metrics</a></li>
+          <li><a href="#testimonials" class="mobile-nav-link">Reviews</a></li>
+          <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        </ul>
+        <div class="mobile-drawer-actions">
+          <a href="#pricing" class="btn btn-secondary-subtle btn-block">Sign In</a>
+          <a href="#pricing" class="btn btn-primary btn-block">Start Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         HERO SECTION
+         - High-impact value proposition
+         - Dual CTA action buttons
+         - Glassmorphism live telemetry terminal preview
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="container hero-container">
+        
+        <!-- Hero Copy & Call To Action -->
+        <div class="hero-content">
+          <!-- Release Announcement Pill -->
+          <div class="hero-pill-badge" role="region" aria-label="Announcement">
+            <span class="pill-dot" aria-hidden="true"></span>
+            <span class="pill-text">Pulseflow 2.0 is live</span>
+            <span class="pill-divider" aria-hidden="true">•</span>
+            <a href="#features" class="pill-link">Explore edge sync &rarr;</a>
+          </div>
+
+          <h1 class="hero-title">
+            Intelligent Workflows for <span class="text-gradient">Modern Engineering</span> Teams
+          </h1>
+
+          <p class="hero-subtitle">
+            Orchestrate continuous delivery pipelines, monitor real-time edge telemetry, and automate deployment triage with an enterprise-ready developer platform.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#pricing" class="btn btn-primary btn-lg">
+              <span>Start Free 14-Day Trial</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <button class="btn btn-secondary btn-lg" id="demo-modal-trigger" aria-haspopup="dialog">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Watch 2-Min Demo</span>
+            </button>
+          </div>
+
+          <!-- Micro-copy social trust markers -->
+          <ul class="hero-trust-list" role="list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>No credit card required</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>SOC2 Type II Certified</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>99.99% Guaranteed SLA</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hero Graphic: Live Interactive Telemetry Card -->
+        <div class="hero-visual" role="region" aria-label="Pulseflow Live Telemetry Preview">
+          <div class="terminal-card">
+            <!-- Window Bar -->
+            <div class="terminal-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span>pulseflow-cluster // us-east-prod.telemetry</span>
+              </div>
+              <div class="live-status-pill">
+                <span class="live-pulse"></span>
+                <span>LIVE</span>
+              </div>
+            </div>
+
+            <!-- Terminal Dashboard Body -->
+            <div class="terminal-body">
+              <!-- Metric Strip -->
+              <div class="terminal-metrics-grid">
+                <div class="metric-mini-card">
+                  <span class="metric-mini-label">Pipeline Latency</span>
+                  <span class="metric-mini-value text-cyan">14.2 ms</span>
+                  <span class="metric-mini-sub">&darr; 28% vs baseline</span>
+                </div>
+                <div class="metric-mini-card">
+                  <span class="metric-mini-label">Global Throughput</span>
+                  <span class="metric-mini-value text-indigo">48,290 req/s</span>
+                  <span class="metric-mini-sub">&uarr; 12% peak traffic</span>
+                </div>
+                <div class="metric-mini-card">
+                  <span class="metric-mini-label">Edge Health Score</span>
+                  <span class="metric-mini-value text-emerald">99.998%</span>
+                  <span class="metric-mini-sub">64/64 nodes synced</span>
+                </div>
+              </div>
+
+              <!-- Live Execution Logs Stream -->
+              <div class="terminal-code-view">
+                <div class="code-line"><span class="token-time">11:28:02</span> <span class="token-tag green">[DEPLOY]</span> Release v2.4.1 initialized across multi-region cluster</div>
+                <div class="code-line"><span class="token-time">11:28:04</span> <span class="token-tag blue">[PIPELINE]</span> Running test suites in parallel: 842 passed, 0 failures</div>
+                <div class="code-line"><span class="token-time">11:28:07</span> <span class="token-tag purple">[SYNC]</span> Edge cache warmed: Cloudflare, Fastly, AWS CloudFront</div>
+                <div class="code-line"><span class="token-time">11:28:09</span> <span class="token-tag cyan">[SUCCESS]</span> Zero-downtime deployment finished in 4.31s</div>
+              </div>
+
+              <!-- Animated Sparkline Indicator -->
+              <div class="sparkline-wrapper">
+                <span class="sparkline-label">Real-Time Event Stream</span>
+                <svg class="sparkline-svg" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M0,35 Q30,10 60,25 T120,15 T180,30 T240,8 T300,20 T360,5 L400,12" fill="none" stroke="url(#sparkline-grad)" stroke-width="2.5" stroke-linecap="round"/>
+                  <defs>
+                    <linearGradient id="sparkline-grad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#4F46E5"/>
+                      <stop offset="50%" stop-color="#06B6D4"/>
+                      <stop offset="100%" stop-color="#10B981"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SOCIAL PROOF & CLIENT LOGOS
+         - Responsive flexbox row wrapping gracefully
+         - Subtle opacity with hover highlight
+         ======================================================================= -->
+    <section class="partners-section" id="partners" aria-label="Trusted by companies worldwide">
+      <div class="container">
+        <p class="partners-heading">TRUSTED BY FORWARD-THINKING ENGINEERING TEAMS AT 1,500+ ENTERPRISES</p>
+        <div class="partners-logo-grid">
+          <div class="partner-logo-item" title="Acme Cloud">
+            <svg width="130" height="34" viewBox="0 0 130 34" fill="currentColor" aria-label="Acme Cloud Logo">
+              <path d="M12 4L4 26H10L12 20H18L20 26H26L18 4H12ZM13.5 15L15 9L16.5 15H13.5Z"/>
+              <text x="32" y="22" font-size="14" font-weight="700" letter-spacing="1">ACME CLOUD</text>
+            </svg>
+          </div>
+          <div class="partner-logo-item" title="DataPrism">
+            <svg width="125" height="34" viewBox="0 0 125 34" fill="currentColor" aria-label="DataPrism Logo">
+              <polygon points="12,4 22,24 2,24"/>
+              <text x="30" y="22" font-size="14" font-weight="700" letter-spacing="1">DATAPRISM</text>
+            </svg>
+          </div>
+          <div class="partner-logo-item" title="HyperScale">
+            <svg width="130" height="34" viewBox="0 0 130 34" fill="currentColor" aria-label="HyperScale Logo">
+              <rect x="4" y="6" width="18" height="18" rx="4"/>
+              <path d="M9 15L13 19L21 11" stroke="#0B0F19" stroke-width="2.5" fill="none"/>
+              <text x="32" y="22" font-size="14" font-weight="700" letter-spacing="1">HYPERSCALE</text>
+            </svg>
+          </div>
+          <div class="partner-logo-item" title="NextGen Ops">
+            <svg width="135" height="34" viewBox="0 0 135 34" fill="currentColor" aria-label="NextGen Ops Logo">
+              <circle cx="12" cy="16" r="10"/>
+              <circle cx="12" cy="16" r="4" fill="#0B0F19"/>
+              <text x="30" y="22" font-size="14" font-weight="700" letter-spacing="1">NEXTGEN OPS</text>
+            </svg>
+          </div>
+          <div class="partner-logo-item" title="Synthetix">
+            <svg width="125" height="34" viewBox="0 0 125 34" fill="currentColor" aria-label="Synthetix Logo">
+              <path d="M4 8L14 16L4 24M20 8L10 16L20 24"/>
+              <text x="30" y="22" font-size="14" font-weight="700" letter-spacing="1">SYNTHETIX</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         KEY STATS & PERFORMANCE METRICS
+         - 4-column responsive grid scaling to 2x2 on tablet and 1-col on mobile
+         ======================================================================= -->
+    <section class="stats-section" id="stats" aria-label="Platform performance metrics">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-card">
+            <div class="stat-number text-gradient">10x</div>
+            <div class="stat-label">Faster Deploy Cycles</div>
+            <p class="stat-desc">From code merge to edge production in seconds instead of minutes.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number text-cyan">99.99%</div>
+            <div class="stat-label">Enterprise SLA Uptime</div>
+            <p class="stat-desc">Multi-region active-active redundancy with automated failover.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number text-emerald">4.8M+</div>
+            <div class="stat-label">Automated Workflows / Day</div>
+            <p class="stat-desc">Orchestrating concurrent build steps across 12 distributed edge zones.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number text-purple">&lt;15ms</div>
+            <div class="stat-label">Global Telemetry Latency</div>
+            <p class="stat-desc">Sub-second metrics and real-time observability distributed worldwide.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FEATURES & CORE HIGHLIGHTS
+         - CSS Grid layout adapting smoothly from 3 columns down to 1
+         - Accessible card patterns with distinct icon headers
+         ======================================================================= -->
+    <section class="features-section" id="features">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-badge">CORE CAPABILITIES</span>
+          <h2 class="section-title">Engineered for High-Velocity Software Delivery</h2>
+          <p class="section-subtitle">
+            Eliminate operational friction with intuitive workflow automation, live edge analytics, and zero-configuration developer tooling.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Feature Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper bg-indigo-subtle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Automated CI/CD Pipelines</h3>
+            <p class="feature-card-text">
+              Define declarative pipelines in pure YAML or code. Pulseflow intelligently caches artifact layers to slash build and testing durations by over 70%.
+            </p>
+            <div class="feature-tags">
+              <span class="tag">Smart Caching</span>
+              <span class="tag">Matrix Builds</span>
+            </div>
+          </article>
+
+          <!-- Feature Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper bg-cyan-subtle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Real-Time Edge Telemetry</h3>
+            <p class="feature-card-text">
+              Monitor live request volumes, error spikes, and container health with sub-millisecond precision across every deployed serverless and container worker.
+            </p>
+            <div class="feature-tags">
+              <span class="tag">Distributed Tracing</span>
+              <span class="tag">OpenTelemetry</span>
+            </div>
+          </article>
+
+          <!-- Feature Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper bg-emerald-subtle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">AI Root-Cause Diagnostics</h3>
+            <p class="feature-card-text">
+              When production incidents occur, Pulseflow instantly correlates log anomalies and commit diffs to pinpoint the exact broken line and trigger auto-rollback.
+            </p>
+            <div class="feature-tags">
+              <span class="tag">Auto-Rollback</span>
+              <span class="tag">Log Correlation</span>
+            </div>
+          </article>
+
+          <!-- Feature Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper bg-purple-subtle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Enterprise Security &amp; RBAC</h3>
+            <p class="feature-card-text">
+              Granular access control, hardware key MFA, audit trail logging, and native integration with Okta, Azure AD, and HashiCorp Vault.
+            </p>
+            <div class="feature-tags">
+              <span class="tag">SOC2 Type II</span>
+              <span class="tag">SAML 2.0 / SSO</span>
+            </div>
+          </article>
+
+          <!-- Feature Card 5 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper bg-amber-subtle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Multi-Cloud Mesh Sync</h3>
+            <p class="feature-card-text">
+              Deploy identical workloads seamlessly across AWS, Google Cloud, Microsoft Azure, and private Kubernetes clusters with zero provider lock-in.
+            </p>
+            <div class="feature-tags">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Zero Lock-In</span>
+            </div>
+          </article>
+
+          <!-- Feature Card 6 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper bg-rose-subtle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F43F5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Zero-Config Observability</h3>
+            <p class="feature-card-text">
+              Drop one lightweight SDK into your codebase. Automatically generate APM dashboards, error alerts, and Slack/PagerDuty routing without writing metric scrapers.
+            </p>
+            <div class="feature-tags">
+              <span class="tag">Instant SDK</span>
+              <span class="tag">Slack / PagerDuty</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         INTERACTIVE PRODUCT SHOWCASE / "HOW IT WORKS"
+         - Tabbed interface switching interactive visual views
+         - Accessible keyboard navigation (Arrow keys, Enter, Space)
+         ======================================================================= -->
+    <section class="showcase-section" id="how-it-works">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-badge">DEVELOPER WORKFLOW</span>
+          <h2 class="section-title">From Code Commit to Global Edge in 3 Steps</h2>
+          <p class="section-subtitle">
+            Pulseflow abstracts away infrastructure complexity so engineers can stay focused on writing shipping code.
+          </p>
+        </div>
+
+        <!-- Interactive Tab Navigation -->
+        <div class="tab-controls-wrapper" role="tablist" aria-label="Workflow Steps">
+          <button class="tab-btn active" role="tab" id="tab-step-1" aria-selected="true" aria-controls="panel-step-1" tabindex="0">
+            <span class="tab-number">1</span>
+            <span class="tab-label">Connect Repository</span>
+          </button>
+          <button class="tab-btn" role="tab" id="tab-step-2" aria-selected="false" aria-controls="panel-step-2" tabindex="-1">
+            <span class="tab-number">2</span>
+            <span class="tab-label">Configure Pipeline</span>
+          </button>
+          <button class="tab-btn" role="tab" id="tab-step-3" aria-selected="false" aria-controls="panel-step-3" tabindex="-1">
+            <span class="tab-number">3</span>
+            <span class="tab-label">Deploy &amp; Observe</span>
+          </button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div class="tab-panels-container">
+          
+          <!-- Panel 1: Connect -->
+          <div class="tab-panel active" id="panel-step-1" role="tabpanel" aria-labelledby="tab-step-1">
+            <div class="panel-layout">
+              <div class="panel-info">
+                <span class="panel-step-tag">Step 01</span>
+                <h3 class="panel-title">Link your Git provider in one click</h3>
+                <p class="panel-text">
+                  Seamlessly authorize GitHub, GitLab, or Bitbucket. Pulseflow automatically detects your project stack, Dockerfile configurations, and test runners with zero manual setup.
+                </p>
+                <ul class="panel-feature-list" role="list">
+                  <li>Automatic branch preview environments</li>
+                  <li>Fine-grained repository permission tokens</li>
+                  <li>Encrypted webhook secrets sync</li>
+                </ul>
+              </div>
+              <div class="panel-preview">
+                <div class="code-box">
+                  <div class="code-box-header">
+                    <span class="code-lang">CLI Setup</span>
+                    <button class="copy-code-btn" aria-label="Copy CLI command" data-copy="npx pulseflow init --provider github">Copy</button>
+                  </div>
+                  <pre class="code-box-body"><code><span class="c-comment"># Install CLI and link repo in 5 seconds</span>
+<span class="c-prompt">$</span> npx pulseflow init --provider github
+
+<span class="c-success">&check; Connected to org: AcmeDev / repo: api-gateway</span>
+<span class="c-info">&bull; Detected: Node.js 22, TypeScript, Dockerfile</span>
+<span class="c-info">&bull; Generated pipeline definition: .pulseflow.yml</span>
+<span class="c-success">&check; Webhook listeners initialized successfully!</span></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Configure -->
+          <div class="tab-panel" id="panel-step-2" role="tabpanel" aria-labelledby="tab-step-2" hidden>
+            <div class="panel-layout">
+              <div class="panel-info">
+                <span class="panel-step-tag">Step 02</span>
+                <h3 class="panel-title">Declare lightweight YAML pipelines</h3>
+                <p class="panel-text">
+                  Craft powerful parallel workflows with smart caching, automated rollback conditions, and multi-region deployment targets defined directly in version control.
+                </p>
+                <ul class="panel-feature-list" role="list">
+                  <li>Layered Docker and node_modules caching</li>
+                  <li>Canary &amp; blue-green rollout strategies</li>
+                  <li>Automated security vulnerability gate checks</li>
+                </ul>
+              </div>
+              <div class="panel-preview">
+                <div class="code-box">
+                  <div class="code-box-header">
+                    <span class="code-lang">.pulseflow.yml</span>
+                    <button class="copy-code-btn" aria-label="Copy YAML snippet" data-copy="version: 2
+pipeline:
+  trigger: [push, pr]
+  stages:
+    - name: test
+      parallel: [lint, unit, e2e]
+    - name: edge-deploy
+      strategy: canary-10
+      regions: [us-east, eu-west, ap-south]">Copy</button>
+                  </div>
+                  <pre class="code-box-body"><code><span class="c-key">version</span>: <span class="c-num">2</span>
+<span class="c-key">pipeline</span>:
+  <span class="c-key">trigger</span>: [<span class="c-str">push</span>, <span class="c-str">pull_request</span>]
+  <span class="c-key">stages</span>:
+    - <span class="c-key">name</span>: <span class="c-str">test-and-lint</span>
+      <span class="c-key">parallel</span>: [<span class="c-str">unit-tests</span>, <span class="c-str">security-audit</span>]
+      <span class="c-key">cache</span>: <span class="c-str">~/.pnpm-store</span>
+    - <span class="c-key">name</span>: <span class="c-str">edge-deploy</span>
+      <span class="c-key">strategy</span>: <span class="c-str">canary-rollout</span>
+      <span class="c-key">regions</span>: [<span class="c-str">us-east-1</span>, <span class="c-str">eu-central-1</span>]</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Deploy & Observe -->
+          <div class="tab-panel" id="panel-step-3" role="tabpanel" aria-labelledby="tab-step-3" hidden>
+            <div class="panel-layout">
+              <div class="panel-info">
+                <span class="panel-step-tag">Step 03</span>
+                <h3 class="panel-title">Real-time edge telemetry &amp; auto-rollback</h3>
+                <p class="panel-text">
+                  Watch live builds propagate across distributed edge regions. If error thresholds surpass 0.05%, Pulseflow automatically aborts the canary and restores the prior stable build.
+                </p>
+                <ul class="panel-feature-list" role="list">
+                  <li>Global response latency heatmaps</li>
+                  <li>Live log tailing with grep filters</li>
+                  <li>Automated Slack &amp; Discord alerts</li>
+                </ul>
+              </div>
+              <div class="panel-preview">
+                <div class="code-box">
+                  <div class="code-box-header">
+                    <span class="code-lang">Telemetry Monitor</span>
+                    <button class="copy-code-btn" aria-label="Copy monitor status" data-copy="Pulseflow Edge Health: 100% OK">Copy</button>
+                  </div>
+                  <pre class="code-box-body"><code><span class="c-success">&check; Canary Rollout Phase 1 (10%):</span> Verified 12,000 reqs
+<span class="c-success">&check; Canary Rollout Phase 2 (50%):</span> Verified 48,000 reqs
+<span class="c-success">&check; Canary Rollout Complete (100%):</span> Global Traffic Switched
+<span class="c-info">&bull; Region Latency:</span> US: 8ms | EU: 12ms | AP: 18ms
+<span class="c-success">&starf; Zero 5xx errors recorded during switchover</span></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         TESTIMONIALS & SOCIAL PROOF
+         - Responsive cards featuring verified reviews
+         ======================================================================= -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-badge">USER STORIES</span>
+          <h2 class="section-title">Trusted by Engineering Leaders Worldwide</h2>
+          <p class="section-subtitle">
+            See how high-performing teams reduced cycle times and enhanced production confidence with Pulseflow.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Pulseflow slashed our deployment cycle from 28 minutes to under 3 minutes. The edge telemetry caught a critical memory leak before it ever touched our European customer base."
+            </p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">
+                <span>SC</span>
+              </div>
+              <div class="author-details">
+                <cite class="author-name">Sarah Chen</cite>
+                <span class="author-title">VP of Engineering at Acme Cloud</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card featured-testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The ability to configure multi-cloud pipelines without writing bespoke scripts saved our DevOps engineers hundreds of hours every quarter. It's the gold standard of developer platforms."
+            </p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">
+                <span>MR</span>
+              </div>
+              <div class="author-details">
+                <cite class="author-name">Marcus Rodriguez</cite>
+                <span class="author-title">Chief Architect at HyperScale</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Automated canary rollbacks alone justified the investment on day one. Our on-call engineers sleep peacefully knowing bad commits are quarantined in milliseconds."
+            </p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">
+                <span>EW</span>
+              </div>
+              <div class="author-details">
+                <cite class="author-name">Elena Rostova</cite>
+                <span class="author-title">Director of DevOps at NextGen Ops</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         INTERACTIVE PRICING SECTION
+         - Monthly vs. Annual Billing Toggle (Save 20%)
+         - 3 Responsive Tier Cards (Starter, Pro, Enterprise)
+         ======================================================================= -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-badge">TRANSPARENT PRICING</span>
+          <h2 class="section-title">Simple Plans That Grow With Your Architecture</h2>
+          <p class="section-subtitle">
+            Start free with full community features. Upgrade when your team needs unlimited concurrency and enterprise governance.
+          </p>
+
+          <!-- Billing Frequency Toggle Switch -->
+          <div class="pricing-toggle-wrapper">
+            <span class="toggle-label" id="monthly-label">Monthly</span>
+            <button class="billing-switch" id="billing-switch" role="switch" aria-checked="true" aria-labelledby="annual-label">
+              <span class="switch-handle"></span>
+            </button>
+            <span class="toggle-label active" id="annual-label">
+              Annually <span class="save-badge">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Starter Tier -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Starter</h3>
+              <p class="plan-desc">Perfect for side projects and individual developers getting started.</p>
+              <div class="plan-price-wrap">
+                <span class="currency">$</span>
+                <span class="price-value" data-monthly="0" data-annual="0">0</span>
+                <span class="price-cycle">/month</span>
+              </div>
+              <span class="billing-note">Free forever</span>
+            </div>
+
+            <ul class="plan-features-list" role="list">
+              <li><span class="check-icon">&check;</span> 3 Concurrent build pipelines</li>
+              <li><span class="check-icon">&check;</span> 1,500 Monthly build minutes</li>
+              <li><span class="check-icon">&check;</span> 7-Day log retention</li>
+              <li><span class="check-icon">&check;</span> Community Discord support</li>
+              <li class="disabled"><span class="cross-icon">&times;</span> Multi-region edge caching</li>
+              <li class="disabled"><span class="cross-icon">&times;</span> Custom SLA &amp; SSO</li>
+            </ul>
+
+            <a href="#cta-newsletter" class="btn btn-secondary-subtle btn-block">Start Free Today</a>
+          </div>
+
+          <!-- Pro Tier (Featured / Popular) -->
+          <div class="pricing-card popular-plan">
+            <div class="popular-ribbon">MOST POPULAR</div>
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Pro Team</h3>
+              <p class="plan-desc">For fast-moving engineering teams scaling production workloads.</p>
+              <div class="plan-price-wrap">
+                <span class="currency">$</span>
+                <span class="price-value" id="pro-price" data-monthly="49" data-annual="39">39</span>
+                <span class="price-cycle">/month</span>
+              </div>
+              <span class="billing-note" id="pro-billing-note">Billed annually ($468/yr)</span>
+            </div>
+
+            <ul class="plan-features-list" role="list">
+              <li><span class="check-icon">&check;</span> <strong>Unlimited</strong> concurrent pipelines</li>
+              <li><span class="check-icon">&check;</span> 25,000 Monthly build minutes</li>
+              <li><span class="check-icon">&check;</span> 30-Day edge telemetry retention</li>
+              <li><span class="check-icon">&check;</span> Automated AI root-cause diagnostics</li>
+              <li><span class="check-icon">&check;</span> Priority Slack &amp; email support</li>
+              <li class="disabled"><span class="cross-icon">&times;</span> Custom SLA &amp; SSO</li>
+            </ul>
+
+            <a href="#cta-newsletter" class="btn btn-primary btn-block">Start 14-Day Free Trial</a>
+          </div>
+
+          <!-- Enterprise Tier -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-desc">For large organizations requiring bespoke compliance and VPC isolation.</p>
+              <div class="plan-price-wrap">
+                <span class="currency">$</span>
+                <span class="price-value" id="enterprise-price" data-monthly="249" data-annual="199">199</span>
+                <span class="price-cycle">/month</span>
+              </div>
+              <span class="billing-note" id="enterprise-billing-note">Billed annually ($2,388/yr)</span>
+            </div>
+
+            <ul class="plan-features-list" role="list">
+              <li><span class="check-icon">&check;</span> Everything in Pro Team</li>
+              <li><span class="check-icon">&check;</span> Dedicated private cloud / VPC agent</li>
+              <li><span class="check-icon">&check;</span> 99.99% Financially-backed SLA</li>
+              <li><span class="check-icon">&check;</span> SAML 2.0 / Okta / Azure AD SSO</li>
+              <li><span class="check-icon">&check;</span> Unlimited log retention</li>
+              <li><span class="check-icon">&check;</span> 24/7 Dedicated SRE on-call support</li>
+            </ul>
+
+            <a href="#cta-newsletter" class="btn btn-secondary-subtle btn-block">Contact Enterprise Sales</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ACCESSIBLE FAQ ACCORDION SECTION
+         - Smooth expanding/collapsing answers
+         - Keyboard navigation: Enter / Space triggers, aria-expanded
+         ======================================================================= -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        
+        <div class="section-header text-center">
+          <span class="section-badge">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about Pulseflow setup, architecture, security, and billing.
+          </p>
+        </div>
+
+        <div class="accordion" id="faq-accordion">
+          
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" aria-expanded="true" aria-controls="faq-answer-1" id="faq-btn-1">
+                <span>How difficult is it to migrate our existing pipelines to Pulseflow?</span>
+                <span class="accordion-icon" aria-hidden="true">&plus;</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1">
+              <div class="accordion-panel-inner">
+                <p>
+                  Most teams migrate within an afternoon. Pulseflow includes native importer CLI tools for GitHub Actions, GitLab CI, and Jenkins, translating existing workflow configurations directly into Pulseflow pipeline definitions while preserving environment variables and secret stores.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2">
+                <span>Can Pulseflow be hosted on our private cloud or inside a VPC?</span>
+                <span class="accordion-icon" aria-hidden="true">&plus;</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <div class="accordion-panel-inner">
+                <p>
+                  Yes! Our Enterprise tier provides lightweight self-hosted runner agents that execute inside your private AWS VPC, Google Cloud Project, or on-premise Kubernetes cluster. Code and artifacts never leave your perimeter while you enjoy the centralized Pulseflow management dashboard.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3">
+                <span>What security certifications and compliance standards do you adhere to?</span>
+                <span class="accordion-icon" aria-hidden="true">&plus;</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <div class="accordion-panel-inner">
+                <p>
+                  Pulseflow is SOC2 Type II and ISO 27001 certified. We enforce strict end-to-end encryption with AES-256 for artifacts at rest and TLS 1.3 in transit. Furthermore, our infrastructure undergoes annual third-party penetration testing and continuous vulnerability scanning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-4">
+                <span>How does the 14-day free trial work?</span>
+                <span class="accordion-icon" aria-hidden="true">&plus;</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <div class="accordion-panel-inner">
+                <p>
+                  When you sign up for the Pro Team trial, you get unrestricted access to all Pro features—including unlimited concurrent builds and AI root-cause diagnostics. No credit card is required upfront. At the end of 14 days, you can choose to subscribe or automatically downgrade to the forever-free Starter plan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-answer-5" id="faq-btn-5">
+                <span>What level of customer support is provided?</span>
+                <span class="accordion-icon" aria-hidden="true">&plus;</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5" hidden>
+              <div class="accordion-panel-inner">
+                <p>
+                  Starter users receive active community assistance through our developer Discord. Pro Team plans include business-day priority email and in-app chat with a sub-2-hour SLA. Enterprise plans include a dedicated Slack/Teams connect channel with 24/7 SRE pager escalation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FINAL CTA / NEWSLETTER LEAD CAPTURE
+         - Gradient border floating banner
+         - Client-side validated form with real-time feedback
+         ======================================================================= -->
+    <section class="cta-banner-section" id="cta-newsletter">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Accelerate Your Software Delivery?</h2>
+            <p class="cta-subtitle">
+              Join 1,500+ engineering teams shipping resilient code daily. Start your free trial today or request developer access.
+            </p>
+
+            <form class="cta-form" id="lead-form" novalidate>
+              <div class="form-group">
+                <label for="lead-email" class="visually-hidden">Work Email Address</label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <input 
+                    type="email" 
+                    id="lead-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="Enter your work email..." 
+                    required 
+                    autocomplete="email"
+                    aria-describedby="email-error"
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                  <span class="btn-text">Get Started Free</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+              </div>
+              <p class="form-error-msg" id="email-error" role="alert" aria-live="polite"></p>
+            </form>
+
+            <p class="cta-fineprint">
+              Instant activation • No credit card required • GDPR &amp; SOC2 compliant
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER SECTION
+       - Semantic <footer>
+       - 4-column responsive grid collapsing to 2 cols on tablet, 1 on mobile
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Column 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <a href="#hero" class="brand-logo" aria-label="Pulseflow Home">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="url(#footer-logo-grad)"/>
+            <path d="M7 16L12 11L17 21L21 13L25 16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F46E5"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">Pulseflow</span>
+        </a>
+        <p class="footer-brand-desc">
+          The intelligent developer workflow and edge telemetry platform for resilient engineering teams.
+        </p>
+        <div class="social-links" aria-label="Social media channels">
+          <a href="https://github.com" class="social-icon-btn" aria-label="GitHub Repository" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter / X profile" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://discord.com" class="social-icon-btn" aria-label="Discord Community" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Product -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Product</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#features">CI/CD Pipelines</a></li>
+          <li><a href="#features">Edge Telemetry</a></li>
+          <li><a href="#features">AI Diagnostics</a></li>
+          <li><a href="#how-it-works">Architecture Flow</a></li>
+          <li><a href="#pricing">Pricing Plans</a></li>
+          <li><a href="#faq">Changelog v2.4</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Resources -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Resources</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#how-it-works">Documentation</a></li>
+          <li><a href="#how-it-works">CLI Reference</a></li>
+          <li><a href="#how-it-works">API Documentation</a></li>
+          <li><a href="#stats">System Status</a></li>
+          <li><a href="#testimonials">Customer Stories</a></li>
+          <li><a href="#faq">Security Whitepaper</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Company & Legal -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#hero">About Pulseflow</a></li>
+          <li><a href="#stats">Engineering Blog</a></li>
+          <li><a href="#testimonials">Careers <span class="badge-mini">We're hiring</span></a></li>
+          <li><a href="#faq">Privacy Policy</a></li>
+          <li><a href="#faq">Terms of Service</a></li>
+          <li><a href="#faq">Compliance (SOC2)</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; 2026 Pulseflow Technologies Inc. All rights reserved. Engineered for high-reliability software teams.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#hero" class="back-to-top-link" id="back-to-top-footer">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING INTERACTIVE CONTROLS
+       - Back to top button
+       - Toast notification container for real-time feedback
+       ========================================================================= -->
+  <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Accessible Toast Notification Region -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Interactive Video Demo Modal Dialog -->
+  <dialog class="demo-modal" id="demo-modal" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Pulseflow Platform Walkthrough</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close demo modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="video-placeholder">
+          <div class="pulse-play-ring" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <p class="video-title">Interactive 2-Minute Architectural Overview</p>
+          <p class="video-caption">Demonstrating automated canary deployments, sub-15ms edge tracing, and instant AI incident triage.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-cancel-btn">Close</button>
+        <a href="#pricing" class="btn btn-primary" id="modal-cta-btn">Start Free 14-Day Trial</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
